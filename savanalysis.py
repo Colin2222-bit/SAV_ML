@@ -28,10 +28,7 @@ from sklearn.tree import plot_tree
 from google.colab import drive
 drive.mount('/content/drive', force_remount=True)
 
-
-file_path = '/content/drive/MyDrive/SAV_Ultimate_Master_Spreadsheet.xlsx'
-savsurvey = pd.read_excel(file_path, sheet_name='NOAA_Survey_Data2')
-buoy = pd.read_excel(file_path, sheet_name='BuoyData')
+#Read excel (not included)
 
 # Ensure Date is parsed
 savsurvey['Date'] = pd.to_datetime(savsurvey['Date'], errors='coerce')
